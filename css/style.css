@@ -37,7 +37,7 @@
     }
     .section { padding: 96px 0; }
     .section--gray { background: var(--gray); }
-    .section--navy { background: var(--navy); color: var(--white); }
+    .section--navy { background: var(--navy); color: var(--white); margin-top: 17%;}
 
     .section-label {
       display: block;
@@ -96,6 +96,48 @@
       border-color: rgba(255,255,255,0.55);
     }
     .btn--outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+
+    /* =============================================
+       中間CTA
+    ============================================= */
+    .mid-cta {
+      background: #F97316;
+      padding: 52px 0;
+    }
+    .mid-cta__inner {
+      text-align: center;
+    }
+    .mid-cta__title {
+      font-size: clamp(24px, 2.8vw, 36px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.35;
+    }
+    .mid-cta__sub {
+      margin-top: 12px;
+      font-size: 15px;
+      color: rgba(255,255,255,0.9);
+    }
+    .mid-cta__btn {
+      margin-top: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border-radius: 8px;
+      border: 2px solid var(--navy);
+      background: var(--navy);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 700;
+      transition: transform 0.22s, background 0.22s, border-color 0.22s;
+    }
+    .mid-cta__btn:hover {
+      transform: translateY(-2px);
+      background: #0b1833;
+      border-color: #0b1833;
+    }
 
     /* =============================================
        01 ヘッダー
@@ -824,6 +866,10 @@
       .section { padding: 56px 0; }
       .inner { padding: 0 20px; }
       .header-inner { padding: 0 20px; }
+
+      .mid-cta { padding: 44px 0; }
+      .mid-cta__sub { font-size: 14px; }
+      .mid-cta__btn { width: 100%; max-width: 320px; }
 
       .fv-cta-wrap { flex-direction: column; }
       .fv-cta-wrap .btn { width: 100%; }
